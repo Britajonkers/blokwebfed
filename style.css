@@ -49,7 +49,7 @@ ul {
   }
   
   li {
-	margin-right: 20px; /* Spacing tussen de items */
+	margin-right: 1.2em; 
   }
   
   li a {
@@ -58,15 +58,24 @@ ul {
 	text-decoration: none;
 	color: white;
 	font-weight: bold;
-  }
-  
-  li a:hover {
-	color: lightgray;
-  }
-  
-  li a:first-child {
-	border-bottom: 2px solid #00aaff; /* blauwe lijn onder 'Trending' */
+	white-space: nowrap;
   }
 
+ li a [href="index.html"] {
+	border-bottom: 2px solid #00aaff;
+ }
+  
+  li a:hover {
+	font-weight: 200;
+  }
+  
+  li a:active {
+	border-bottom: 2px solid #00aaff; /* Blauwe lijn onder actieve pagina */
+}
+ section{
+	display: flex;
+	overflow-x: scroll;
+	
+ }
   
   
