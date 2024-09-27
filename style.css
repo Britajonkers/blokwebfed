@@ -61,9 +61,13 @@ ul {
 	white-space: nowrap;
   }
 
- li a [href="index.html"] {
-	border-bottom: 2px solid #00aaff;
- }
+  li:nth-child(1) a {
+	border-bottom: 2px solid #00aaff; /* Blauwe lijn onder de eerste link */
+}
+
+li:nth-child(2) a {
+	border-bottom: 2px solid #00aaff; /* Blauwe lijn onder de tweede link */
+}
   
   li a:hover {
 	font-weight: 200;
