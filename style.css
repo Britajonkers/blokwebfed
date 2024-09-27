@@ -34,8 +34,11 @@
 /* jouw code */
 
 body{
-	background-color:  #000;
-	font-family: Arial, Helvetica, sans-serif;
+	background-color:  #001c35;
+	
+	font-family: 'Roboto', sans-serif;
+	
+	
 	color: white;
 }
 h1{
@@ -53,7 +56,7 @@ ul {
 	margin: 0;
 	margin-block: 5%;
 	padding: 0;
-	background-color: #000;
+	
 	display: flex;
 
 
@@ -69,13 +72,14 @@ ul {
 	display: block;
 	padding: 0.7em 1em;
 	text-decoration: none;
-	color: white;
+	color:rgb(153, 153, 153);
 	font-weight: bold;
 	white-space: nowrap;
   }
 
   li:nth-child(n):has(a:focus-within)  {
 	border-bottom: 0.2em solid #00aaff; 
+	color: white;
 }
 
 
@@ -85,7 +89,7 @@ ul {
   }
   
  
- section{
+ nav{
 	display: flex;
 	overflow-x: scroll;
 	
@@ -96,3 +100,75 @@ ul {
 
   /* /////HASHTAGS///// */
   
+  section ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0.5em;
+	display: flex; /* Horizontale layout */
+	overflow-x: auto; /* Horizontaal scrollen */
+
+	white-space: nowrap; /* Voorkomt dat de items breken naar een nieuwe regel */
+}
+
+section ul li  {
+	padding: 0.4em 0.7em 0.4em;
+	margin: 0 0.3em; /* Ruimte tussen de lijstitems */
+	background-color: #e0e0e0;
+	color: #000000;
+	border-radius: 2em;
+	text-align: center;
+}
+
+section ul  :nth-child(1){
+	background-color: #C4BC37;
+	
+}
+
+section ul  :nth-child(2){
+	background-color: #F27405;
+	
+}
+
+section ul  :nth-child(3){
+	background-color: #F24130;
+	
+}
+
+section ul  :nth-child(4){
+	background-color: #F263CC;
+	
+}
+
+section ul  :nth-child(5){
+	background-color: #705CF2;
+	
+}
+section ul  :nth-child(6){
+	background-color: #6CD9A6;
+	
+}
+section ul  :nth-child(7){
+	background-color: #F24130;
+	
+}
+section ul  :nth-child(8){
+	background-color: #F27405;
+	
+}
+
+section ul  :nth-child(9){
+	background-color: #705CF2;
+	
+}
+
+li{
+	
+		font-family: 'Roboto', sans-serif;
+
+	
+}
+
+li p{
+	color: #00aaff;
+	font-family: 'Roboto', sans-serif;
+}
