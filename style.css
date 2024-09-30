@@ -34,7 +34,7 @@
 /* jouw code */
 
 body{
-	background-color:  #001c35;
+	background-color:  #0D0D0D;
 	
 	font-family: 'Roboto', sans-serif;
 	
@@ -108,7 +108,7 @@ ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0.5em;
-	display: flex; /* Horizontale layout */
+	display: flex;   /* Horizontale layout */
 	overflow-x: auto; /* Horizontaal scrollen */
 	white-space: nowrap; /* Voorkomt dat de items breken naar een nieuwe regel */
 
@@ -178,3 +178,81 @@ section ul li:nth-child(9){
 
 /* ////////POSTS/////// */
 
+article {
+    background-color:#222222;
+    
+    padding: 20px;
+    max-width: 30em;
+    margin: 20px auto;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+article header  {
+    /* font-size: 1.5em;
+    font-weight: 700;
+    color:#ffffff;
+	border: 0.16em;
+	border-color: #00aaff; */
+	
+  
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+}
+
+article p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #B2B2B2;
+}
+
+article footer {
+    font-size: 0.9em;
+    color: #777;
+    text-align: right;
+	display: flex;
+	
+}
+
+article footer a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+footer img{
+	width: 2.5em;
+	height: auto;
+}
+
+footer p{
+	border: #434343;
+	
+	background-color: #434343;
+	border-width: 0.3em;
+	padding: 0.4em 0.7em 0.4em;
+	margin: 0 0.3em; 
+	border-radius: 2.5em;
+	color: #B2B2B2;
+	
+
+}
+
+article footer a:hover {
+    text-decoration: underline;
+}
+
+figure {
+    margin: 20px 0;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+figure figcaption {
+    text-align: center;
+    font-size: 0.9em;
+    color: #888;
+}
