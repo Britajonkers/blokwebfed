@@ -73,18 +73,22 @@ ul {
 	padding: 0.7em 1em;
 	text-decoration: none;
 	color:rgb(153, 153, 153);
-	font-weight: bold;
+	font-weight: 500;
+	font-size: 1.2em;
 	white-space: nowrap;
   }
 
-  li:nth-child(n):has(a:focus-within)  {
+  li:nth-child(n):has(a:focus-within)  {        
 	border-bottom: 0.2em solid #00aaff; 
 	color: white;
+
 }
 
 
+
+
   li a:hover {
-	font-weight: 200;
+	font-weight: 900;
 	color:deeppink;
   }
   
@@ -106,69 +110,71 @@ ul {
 	padding: 0.5em;
 	display: flex; /* Horizontale layout */
 	overflow-x: auto; /* Horizontaal scrollen */
-
 	white-space: nowrap; /* Voorkomt dat de items breken naar een nieuwe regel */
+
+}
+
+section ul li p {
+	padding: 0.4em 0.7em 0.4em;
+	margin: 0 0.3em; 
+	color: #000000;
+	text-align: center;
+	font-weight: 700;
 }
 
 section ul li  {
-	padding: 0.4em 0.7em 0.4em;
-	margin: 0 0.3em; /* Ruimte tussen de lijstitems */
-	background-color: #e0e0e0;
-	color: #000000;
 	border-radius: 2em;
-	text-align: center;
 }
 
-section ul  :nth-child(1){
-	background-color: #C4BC37;
+section ul li:nth-child(1){
+	background-color:#BFB639;
 	
 }
 
-section ul  :nth-child(2){
-	background-color: #F27405;
-	
+section ul li:nth-child(2) {
+    background-color: #F27405; 
+    
+
 }
 
-section ul  :nth-child(3){
+section ul li:nth-child(3){
 	background-color: #F24130;
 	
 }
 
-section ul  :nth-child(4){
+
+section ul li:nth-child(4){
 	background-color: #F263CC;
 	
 }
 
-section ul  :nth-child(5){
+section ul li:nth-child(5){
 	background-color: #705CF2;
 	
 }
-section ul  :nth-child(6){
+section ul li:nth-child(6){
 	background-color: #6CD9A6;
 	
 }
-section ul  :nth-child(7){
+section ul li:nth-child(7){
 	background-color: #F24130;
 	
 }
-section ul  :nth-child(8){
+section ul li:nth-child(8){
 	background-color: #F27405;
 	
 }
 
-section ul  :nth-child(9){
+section ul li:nth-child(9){
 	background-color: #705CF2;
 	
 }
 
-li{
-	
-		font-family: 'Roboto', sans-serif;
 
-	
-}
 
-li p{
-	color: #00aaff;
-	font-family: 'Roboto', sans-serif;
-}
+
+
+
+
+/* ////////POSTS/////// */
+
