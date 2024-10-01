@@ -48,6 +48,15 @@ h1{
 	font-size: 2em;
   }
 
+  header img{
+	width: 1.6em;
+	height: auto;
+	
+	
+  }
+
+  
+
 
        /* /////NAVBAR///// */
 ul {
@@ -107,7 +116,7 @@ ul {
   section ul {
 	list-style-type: none;
 	margin: 0;
-	padding: 0.5em;
+	padding: 0.3em;
 	display: flex;   /* Horizontale layout */
 	overflow-x: auto; /* Horizontaal scrollen */
 	white-space: nowrap; /* Voorkomt dat de items breken naar een nieuwe regel */
@@ -174,8 +183,6 @@ section ul li:nth-child(9){
 
 
 
-
-
 /* ////////POSTS/////// */
 
 article {
@@ -195,10 +202,19 @@ article header  {
 	border: 0.16em;
 	border-color: #00aaff; */
 	
+  display: flex;
   
+  justify-content: space-between;
+
+
   font-size: .875rem;
   font-weight: 400;
   line-height: 1.125rem;
+}
+
+article header img{
+	width: 1.5em;
+	height: auto;
 }
 
 article p {
@@ -212,8 +228,13 @@ article footer {
     color: #777;
     text-align: right;
 	display: flex;
+	justify-content: space-between;
+	margin: 10 0 10;
+	
 	
 }
+
+
 
 article footer a {
     color: #0066cc;
@@ -221,29 +242,30 @@ article footer a {
 }
 
 footer img{
-	width: 2.5em;
+	width: 2em;
 	height: auto;
+	
 }
 
 footer p{
-	border: #434343;
 	
-	background-color: #434343;
-	border-width: 0.3em;
-	padding: 0.4em 0.7em 0.4em;
-	margin: 0 0.3em; 
-	border-radius: 2.5em;
-	color: #B2B2B2;
-	
+	display: inline-block;
+	text-align: center;
+    background-color: transparent; 
+    border: 0.13em solid #434343; 
+    padding: 0.5em 1em;
+    border-radius: 2em; 
+    color: white; 
+    font-size: 1em; 
+    font-weight: 600; 
+   
 
 }
 
-article footer a:hover {
-    text-decoration: underline;
-}
+
 
 figure {
-    margin: 20px 0;
+    margin: 0.5em;
 }
 
 figure img {
@@ -251,8 +273,3 @@ figure img {
     height: auto;
 }
 
-figure figcaption {
-    text-align: center;
-    font-size: 0.9em;
-    color: #888;
-}
