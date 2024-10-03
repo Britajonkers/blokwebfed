@@ -18,26 +18,27 @@ button.addEventListener('click', function() {
 
 
 
-    // const likeButton = document.getElementById('likeButton');
-    
-    // likeButton.addEventListener('click', function() {
-    //     if (likeButton.src.includes('like.svg')) {
-    //         likeButton.src = 'images/geliked.svg';
-    //     } else {
-    //         likeButton.src = 'images/like.svg';
-    //     }
-    // });
+// // Selecteer het "like" icoon en voeg een klik-event toe
+// document.querySelector('[aria-label="like"]').addEventListener('click', function() {
+//     // Voeg de "animate-shake" klasse toe aan het "like" icoon wanneer erop wordt geklikt
+//     this.classList.add('animate-shake');
+//   });
+  
 
-    const likeButton = document.getElementById('likeButton');
-        
-        // Voeg een klikgebeurtenis toe aan de like-knop
+ocument.addEventListener('DOMContentLoaded', function () {
+    // Selecteer het "like" icoon
+    var likeButton = document.querySelector('section[aria-label="info"] [aria-label="buttons"] [aria-label="like"]');
+
+    // Controleer of het "like" icoon is gevonden
+    if (likeButton) {
+        // Voeg een klik-event toe aan het "like" icoon
         likeButton.addEventListener('click', function() {
-            // Controleer of de huidige afbeelding 'like.svg' is
-            if (likeButton.src.endsWith('like.svg')) {
-                // Verander naar de 'geliked' SVG
-                likeButton.src = 'geliked.svg';
-            } else {
-                // Verander terug naar de 'like' SVG
-                likeButton.src = 'like.svg';
-            }
+            // Voeg de animatieklasse toe aan het "like" icoon
+            this.classList.add('animate-shake');
         });
+    } else {
+        console.error('Het like-icoon is niet gevonden!');
+    }
+});
+
+// bron https://chatgpt.com/share/66ff10ee-0a68-800b-8e47-bf7e5d088d82
