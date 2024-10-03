@@ -46,26 +46,20 @@ body{
 }
 
 h1{
-	color: rgb(255, 255, 255);
+	color: white;
 	display: flex;
 	justify-content: center;
 	font-size: 2em;
   }
   
 
-  /* header img{
-	width: 1.6em;
-	height: auto;
-	
-  } */
-
+  
 
 	/* /////ANIMATIE TUMBLR///// */
 
 	ul li h1{
 		margin-bottom: 0 ;
 		font-size: 2.0rem;
-		/* outline: solid green; */
 	}
 
 	
@@ -216,7 +210,55 @@ section ul li p {
 	color: #000000;
 	text-align: center;
 	font-weight: 700;
+	animation: hobbelen 3s ease 0s 1 normal forwards;
 }
+
+@keyframes hobbelen {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+/* bron animatie: https://webcode.tools/css-generator/keyframe-animation */
 
 section ul li  {
 	border-radius: 2em;
@@ -281,7 +323,52 @@ article {
     margin:  1.25em auto;
     box-shadow: 0em 0.125em 0.5em rgba(0, 0, 0, 0.1);
     color: black;
-}
+	animation: incoming 3s ease 2s 1 normal forwards;}
+	
+	@keyframes incoming {
+		0% {
+			animation-timing-function: ease-in;
+			opacity: 0;
+			transform: translateY(250px);
+		}
+	
+		38% {
+			animation-timing-function: ease-out;
+			opacity: 1;
+			transform: translateY(0);
+		}
+	
+		55% {
+			animation-timing-function: ease-in;
+			transform: translateY(65px);
+		}
+	
+		72% {
+			animation-timing-function: ease-out;
+			transform: translateY(0);
+		}
+	
+		81% {
+			animation-timing-function: ease-in;
+			transform: translateY(28px);
+		}
+	
+		90% {
+			animation-timing-function: ease-out;
+			transform: translateY(0);
+		}
+	
+		95% {
+			animation-timing-function: ease-in;
+			transform: translateY(8px);
+		}
+	
+		100% {
+			animation-timing-function: ease-out;
+			transform: translateY(0);
+		}
+	}
+/* bron animatie: https://webcode.tools/css-generator/keyframe-animation */
  
 /* bovenste deel */
 article section[aria-label="bovenstuk"] {
@@ -481,9 +568,7 @@ input{
 	margin-bottom: 2em;
 
 }
-placeholder{
-	color: #0066cc;
-}
+
 
 input::placeholder {
 	color: rgb(25, 0, 255);
@@ -492,28 +577,11 @@ input::placeholder {
 
 label{
 	font-size: 0.9em;
-} */
+} 
 
 .inloggen{
 	font-family: 'Roboto', sans-serif;
 	
-
-	nav a{
-		color: white;
-	}
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 
