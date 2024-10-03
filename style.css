@@ -390,14 +390,117 @@ section[aria-label="info"] p {
 
 
 
-
 form{
-	background-color: #705CF2;
+	background-color:rgb(124,92,255);
+	padding: 2em 4em 2em 4em;
+	
+	border-radius: 0.8em;
+	
+}
+
+form  p{
+	text-align: center;
+    color:white;
+    font-size: 1em;
+    padding-bottom: 2em;
+    
 }
 
 
+label{
+    color: white;
+    font-size: 1.6em;
+}
+
+h2{
+	text-align: center;
+    color:white;
+    font-size: 2em;
+	
+}
+
+
+input{
+	border:none;
+    color: white;
+    background-color: rgb(21, 0, 249);
+    border-radius: 0.3em;
+	margin-top: 0.5em;
+    margin-bottom: 1em;
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 100%;
+}
+
+
+#interactieButton {
+    border-radius: 1em;
+	border:none;
+   
+    color: white;
+    background-color: rgb(63, 1, 178);
+  	font-size: 1.1em;
+	font-weight: 700;
+	padding: 1em 3em 1em 3em;
+    margin-top: 2em;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    cursor: pointer;
+    transition: transform 0.3s ease;
+	font-family: 'Roboto', sans-serif;
+}
+
+#interactieButton.clicked {
+    transform: rotate(0.5turn);
+}
+
+
+
+form p{
+	font-family: 'Roboto', sans-serif;
+}
+
+form h2{
+	text-align: center;
+}
+input{
+	background-color: rgb(146, 119, 253);
+	border:none;
+	color: white;
+	font-size: 1em;
+	font-weight: 400;
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+	padding-left: 0.5em;
+	padding-right: 4em;
+	border-radius: 0.4em;
+	font-family: 'Roboto', sans-serif;
+
+	margin-bottom: 2em;
+
+}
+placeholder{
+	color: #0066cc;
+}
+
+input::placeholder {
+	color: rgb(25, 0, 255);
+	opacity: 0.5;
+  }
+
+label{
+	font-size: 0.9em;
+} */
+
 .inloggen{
-	background-color: #000000;
+	font-family: 'Roboto', sans-serif;
+	
+
+	nav a{
+		color: white;
+	}
 
 
 
@@ -411,5 +514,16 @@ form{
 
 
 
+}
 
+
+
+:focus{
+	outline: dashed deeppink 0.2em;
+	/* border: solid rgb(255, 64, 0) 0.1em; */
+}
+
+::selection{
+	color: white;
+	background: deeppink;
 }
