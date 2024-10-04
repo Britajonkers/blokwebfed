@@ -4,11 +4,7 @@
 *, *::after, *::before {
   box-sizing:border-box;  
 }
-/* 
-@font-face {
-	font-family: 'tumblr';
-	src: url('fonts/FavoritTumblr-85.ttf');
-} */
+
 
 
 
@@ -20,8 +16,10 @@
 :root {
 	/* startje */
 	--color-text:#111;
-	--color-background:#eee;
+	--color-background:#0D0D0D;
 	--padding-I: 5%;
+	--highlight-color:deeppink;
+
 }
 
 
@@ -40,7 +38,7 @@
 /* I N D E X  */
 /****************/
 body{
-	background-color:  #0D0D0D;
+	background-color:  var(--color-background);
 	font-family: 'Roboto', sans-serif;
 	color: white;
 }
@@ -63,17 +61,13 @@ h1{
 	}
 
 	
-	
-	
 	ul:has(li[animatie="letters"]) {
-		/* outline: solid blue; */
+		
 		display: flex;
 		justify-content: center;
 	  }
 	
 		
-
-
 
 	@keyframes yay-animation {
 		0%{
@@ -181,15 +175,13 @@ ul {
 }
 
 
-
-
   li a:hover {
 	font-weight: 900;
 	color:white;
   }
   
  
- nav{
+  nav{
 	display: flex;
 	overflow-x: scroll;
 	
@@ -311,6 +303,8 @@ section ul li:nth-child(9){
 
 
 /* bron voor bovenste deel van post: https://chatgpt.com/c/66fd5280-685c-8006-b98a-e9e843966f0f */
+/* bron indeling onderste deel van post: student assistent */
+/* bron content: pinterest en eigen content */
 
 article {
     background-color:#222222;
@@ -451,50 +445,42 @@ section[aria-label="info"] [aria-label="buttons"] img{
 	height: auto;
 }
 
+
+
+
 section[aria-label="info"] [aria-label="buttons"] [aria-label="like"]{
-	animation: schuddennn 3s ease-out 0s 1 normal forwards;
+	animation: bonzen 2s ease 0s 3 normal none;}
+
+
+	@keyframes bonzen {
+		0% {
+			animation-timing-function: ease-out;
+			transform: scale(1);
+			transform-origin: center center;
+		}
 	
+		10% {
+			animation-timing-function: ease-in;
+			transform: scale(0.91);
+		}
+	
+		17% {
+			animation-timing-function: ease-out;
+			transform: scale(0.98);
+		}
+	
+		33% {
+			animation-timing-function: ease-in;
+			transform: scale(0.87);
+		}
+	
+		45% {
+			animation-timing-function: ease-out;
+			transform: scale(1);
+		}
+	
+	/* bron:https://webcode.tools/css-generator/keyframe-animation */
 }
-
-
-/* Schud-animatie voor het "like" icoon */
-@keyframes schuddennn {
-	0%,
-	100% {
-	  transform: rotate(0deg);
-	  transform-origin: 50% 50%;
-	}
-  
-	10% {
-	  transform: rotate(8deg);
-	}
-  
-	20%,
-	40%,
-	60% {
-	  transform: rotate(-10deg);
-	}
-  
-	30%,
-	50%,
-	70% {
-	  transform: rotate(10deg);
-	}
-  
-	80% {
-	  transform: rotate(-8deg);
-	}
-  
-	90% {
-	  transform: rotate(8deg);
-	}
-  }
-  
-  /* Klasse die de animatie toepast */
-  .animate-shake {
-	animation: schuddennn 3s ease-out 0s 1 normal forwards;
-  }
-
 
 
 
@@ -509,6 +495,10 @@ section[aria-label="info"] p {
 	font-size: 1em; 
 	font-weight: 600; 
 	}
+
+
+
+	
 
 
 
@@ -530,21 +520,10 @@ form  p{
     color:white;
     font-size: 1em;
     padding-bottom: 2em;
-    
+    font-family: 'Roboto', sans-serif;
 }
 
 
-label{
-    color: white;
-    font-size: 1.6em;
-}
-
-h2{
-	text-align: center;
-    color:white;
-    font-size: 2em;
-	
-}
 
 
 input{
@@ -559,6 +538,30 @@ input{
     padding-bottom: 1em;
     width: 100%;
 }
+
+
+input::placeholder {
+	color: rgb(208, 161, 255);
+	opacity: 0.5;
+  }
+
+
+
+label{
+    color: white;
+    font-size: 1.6em;
+	font-size: 0.9em;
+}
+
+h2{
+	text-align: center;
+    color:white;
+    font-size: 2em;
+	
+}
+
+
+
 
 
 #interactieButton {
@@ -585,13 +588,9 @@ input{
 
 
 
-form p{
-	font-family: 'Roboto', sans-serif;
-}
 
-form h2{
-	text-align: center;
-}
+
+
 input{
 	background-color: rgb(146, 119, 253);
 	border:none;
@@ -604,7 +603,6 @@ input{
 	padding-right: 4em;
 	border-radius: 0.4em;
 	font-family: 'Roboto', sans-serif;
-
 	margin-bottom: 2em;
 
 }
@@ -634,4 +632,27 @@ label{
 ::selection{
 	color: white;
 	background: deeppink;
+}
+
+
+
+
+/* //////footer///// */
+
+footer nav{
+position:relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(76, 0, 255);
+  color: white;
+}
+
+
+
+footer nav li a {
+	list-style: none;
+	line-height: 3.5em;
+	text-decoration: none;
+	font-size: small;
 }
