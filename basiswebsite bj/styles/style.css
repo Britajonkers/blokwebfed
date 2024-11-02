@@ -1,0 +1,651 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+
+
+
+ 
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-background:#0D0D0D;
+	--padding-I: 5%;
+	--highlight-color:deeppink;
+
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+
+
+
+
+/* I N D E X  */
+/****************/
+body{
+	background-color:  var(--color-background);
+	font-family: 'Roboto', sans-serif;
+	color: white;
+}
+
+h1{
+	color: white;
+	display: flex;
+	justify-content: center;
+	font-size: 2em;
+  }
+  
+
+  
+
+	/* /////ANIMATIE TUMBLR///// */
+
+	ul li h1{
+		margin-bottom: 0 ;
+		font-size: 2.0rem;
+	}
+
+	
+	ul:has(li[animatie="letters"]) {
+		
+		display: flex;
+		justify-content: center;
+	  }
+	
+		
+
+	@keyframes yay-animation {
+		0%{
+		  scale:1;
+		}
+		10%{
+		 
+		  scale:1.2 .8; 
+		}
+		20%{
+		  
+		  scale:.6 1.5;
+		  color:orange;
+		}
+		30%{
+		  scale:1.3 .7;
+		  color: orangered;
+		}
+		40%{
+		  scale:.9 1.1;
+		  color: deeppink;
+		}
+		50%{
+		  scale:1;
+		  color: deeppink;
+
+		  
+		}
+
+		70%{
+			scale:1;
+  
+			
+		  }
+		100%{
+		  scale:1;
+		}
+	  }
+	  
+	  li[aria-label="animatie"] {
+		--highlight-color:rgb(255, 8, 189);
+	  }
+	  
+	  li[aria-label="animatie"] h2 {
+		font-size:2.5em;
+	  }
+	  
+	   li[aria-label="animatie"] span {
+		display:inline-block;
+		
+		transform-origin:center bottom;
+		animation-name:yay-animation;
+		animation-duration:2s;
+		animation-iteration-count:infinite;
+		animation-play-state:paused;
+	  }
+	  
+	  li[aria-label="animatie"] span:nth-of-type(1) {
+		animation-delay:0s;
+	  }
+	  
+	  li[aria-label="animatie"] span:nth-of-type(2) {
+		animation-delay:.15s;
+	  }
+	  
+	  li[aria-label="animatie"] span:nth-of-type(3) {
+		animation-delay:.3s;
+	  }
+	  
+	  li[aria-label="animatie"]:hover span {
+		animation-play-state:running;
+	  }
+	  
+  
+
+
+       /* /////NAVBAR///// */
+ul {
+	list-style-type: none;
+	width: 100%;
+	margin: 0;
+	margin-block: 5%;
+	padding: 0;
+	display: flex;
+  }
+  
+  li {
+	margin-right: 1.2em; 
+  }
+  
+  li a {
+	display: block;
+	padding: 0.7em 1em;
+	text-decoration: none;
+	color:rgb(153, 153, 153);
+	font-weight: 500;
+	font-size: 1.2em;
+	white-space: nowrap;
+  }
+
+  li:nth-child(n):has(a:focus-within)  {        
+	border-bottom: 0.2em solid #00aaff; 
+	color: white;
+
+}
+
+
+  li a:hover {
+	font-weight: 900;
+	color:white;
+  }
+  
+ 
+  nav{
+	display: flex;
+	overflow-x: scroll;
+	
+ }
+  
+  
+
+
+  /* /////HASHTAGS///// */
+  
+  section ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0.3em;
+	display: flex;   
+	overflow-x: auto; 
+	white-space: nowrap; 
+
+}
+
+section ul li p {
+	padding: 0.4em 0.7em 0.4em;
+	margin: 0 0.3em; 
+	color: #000000;
+	text-align: center;
+	font-weight: 700;
+}
+
+
+
+section ul li  {
+	border-radius: 2em;
+	animation: schuddennn 2s ease-in 0s 1 normal forwards;}
+
+@keyframes schuddennn {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 50%;
+	}
+
+	10% {
+		transform: rotate(8deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-10deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(10deg);
+	}
+
+	80% {
+		transform: rotate(-8deg);
+	}
+
+	90% {
+		transform: rotate(8deg);
+	}
+	/* bron animatie: https://webcode.tools/css-generator/keyframe-animation */
+}
+
+
+
+section ul li:nth-child(1){
+	background-color:#BFB639;
+	
+}
+
+section ul li:nth-child(2) {
+    background-color: #F27405; 
+    
+
+}
+
+section ul li:nth-child(3){
+	background-color: #F24130;
+	
+}
+
+
+section ul li:nth-child(4){
+	background-color: #F263CC;
+	
+}
+
+section ul li:nth-child(5){
+	background-color: #705CF2;
+	
+}
+section ul li:nth-child(6){
+	background-color: #6CD9A6;
+	
+}
+section ul li:nth-child(7){
+	background-color: #F24130;
+	
+}
+section ul li:nth-child(8){
+	background-color: #F27405;
+	
+}
+
+section ul li:nth-child(9){
+	background-color: #705CF2;
+	
+}
+
+
+
+
+
+/* ////////POSTS/////// */
+
+
+/* bron voor bovenste deel van post: https://chatgpt.com/c/66fd5280-685c-8006-b98a-e9e843966f0f */
+/* bron indeling onderste deel van post: student assistent */
+/* bron content: pinterest en eigen content */
+
+div[aria-label="post"] {
+    background-color:#222222;
+    max-width: 30em;
+    margin:  1.25em auto;
+    box-shadow: 0em 0.125em 0.5em rgba(0, 0, 0, 0.1);
+    color: black;
+	animation: incoming 3s ease 0s 1 normal forwards;}
+	
+	@keyframes incoming {
+		0% {
+			animation-timing-function: ease-in;
+			opacity: 0;
+			transform: translateY(250px);
+		}
+	
+		38% {
+			animation-timing-function: ease-out;
+			opacity: 1;
+			transform: translateY(0);
+		}
+	
+		55% {
+			animation-timing-function: ease-in;
+			transform: translateY(65px);
+		}
+	
+		72% {
+			animation-timing-function: ease-out;
+			transform: translateY(0);
+		}
+	
+		81% {
+			animation-timing-function: ease-in;
+			transform: translateY(28px);
+		}
+	
+		90% {
+			animation-timing-function: ease-out;
+			transform: translateY(0);
+		}
+	
+		95% {
+			animation-timing-function: ease-in;
+			transform: translateY(8px);
+		}
+	
+		100% {
+			animation-timing-function: ease-out;
+			transform: translateY(0);
+		}
+		/* bron animatie: https://webcode.tools/css-generator/keyframe-animation */
+
+	}
+ 
+/* bovenste deel */
+div[aria-label="header van de post"] {
+	display: flex; 
+    align-items: center; 
+    padding-inline: var(--padding-I);
+	padding-top: 0.5em;
+
+	font-size: .875rem;
+	font-weight: 400;
+	line-height: 1.125rem;
+}
+
+div[aria-label="header van de post"] p{
+	
+    font-size: 1em;
+    color: white;
+}
+
+div[aria-label="header van de post"] img[aria-label="profielfoto"] {
+	width: 5em;  
+    height: auto;
+    margin-right: 0.5em;
+}
+
+
+div[aria-label="header van de post"] img[aria-label="stipjes"] {
+    width: 1.5em;
+    height: auto;
+    margin-left: auto;             
+}
+
+
+div[aria-label="post"] > p{
+    font-size: 1em;
+    line-height: 1.6;
+    color: #B2B2B2;
+	padding-inline:var(--padding-I);
+}
+
+
+/* Content */
+
+div[aria-label="afbeelding"]{
+    margin: 0.5em;
+}
+
+div[aria-label="afbeelding"] img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* onderste deel */
+
+div[aria-label="informatie bij de post"] {
+    font-size: 0.9em;
+    color: #777;
+    text-align: right;
+	display: flex;
+	justify-content: space-between;
+
+	padding-inline:var(--padding-I)
+}
+
+div[aria-label="informatie bij de post"]{
+	flex-grow: 1;
+}
+
+
+
+span[aria-label="buttons"] {
+    display: flex;
+    justify-content: space-around;
+    width: auto; /* Pas breedte aan voor consistentie */
+    gap: 0.5em; /* Ruimte tussen de iconen */
+}
+
+div[aria-label="informatie bij de post"] span[aria-label="buttons"] img {
+	width: 2em;
+	height: auto;
+}
+
+
+
+div[aria-label="informatie bij de post"] span[aria-label="buttons"] img[aria-label="like"]{
+	animation: bonzen 2s ease 0s 3 normal none;}
+
+
+	@keyframes bonzen {
+		0% {
+			animation-timing-function: ease-out;
+			transform: scale(1);
+			transform-origin: center center;
+		}
+	
+		10% {
+			animation-timing-function: ease-in;
+			transform: scale(0.91);
+		}
+	
+		17% {
+			animation-timing-function: ease-out;
+			transform: scale(0.98);
+		}
+	
+		33% {
+			animation-timing-function: ease-in;
+			transform: scale(0.87);
+		}
+	
+		45% {
+			animation-timing-function: ease-out;
+			transform: scale(1);
+		}
+	
+	/* bron:https://webcode.tools/css-generator/keyframe-animation */
+}
+
+
+
+div[aria-label="informatie bij de post"] p {
+	display: inline-block;
+	text-align: center;
+	background-color: transparent; 
+	border: 0.13em solid #434343; 
+	padding: 0.5em 1em;
+	padding: 0.2em 0.8em;
+	border-radius: 2em; 
+	color: white; 
+	font-size: 1em; 
+	font-weight: 600; 
+	}
+
+
+
+	
+
+
+
+/* I N L O G G E N  */
+/****************/
+
+
+
+form{
+	background-color:rgb(124,92,255);
+	padding: 2em 4em 2em 4em;
+	
+	border-radius: 0.8em;
+	
+}
+
+form  p{
+	text-align: center;
+    color:white;
+    font-size: 1em;
+    padding-bottom: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+input{
+	border:none;
+    color: white;
+    background-color: rgb(21, 0, 249);
+    border-radius: 0.3em;
+	margin-top: 0.5em;
+    margin-bottom: 1em;
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 100%;
+}
+
+
+input::placeholder {
+	color: rgb(208, 161, 255);
+	opacity: 0.5;
+  }
+
+
+
+label{
+    color: white;
+    font-size: 1.6em;
+	font-size: 0.9em;
+}
+
+h2{
+	text-align: center;
+    color:white;
+    font-size: 2em;
+	
+}
+
+
+
+
+
+#interactieButton {
+    border-radius: 1em;
+	border:none;
+   
+    color: white;
+    background-color: rgb(63, 1, 178);
+  	font-size: 1.1em;
+	font-weight: 700;
+	padding: 1em 3em 1em 3em;
+    margin-top: 2em;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    cursor: pointer;
+    transition: transform 0.3s ease;
+	font-family: 'Roboto', sans-serif;
+}
+
+#interactieButton.clicked {
+    transform: rotate(0.5turn);
+}
+
+
+
+
+
+
+input{
+	background-color: rgb(146, 119, 253);
+	border:none;
+	color: white;
+	font-size: 1em;
+	font-weight: 400;
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+	padding-left: 0.5em;
+	padding-right: 4em;
+	border-radius: 0.4em;
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 2em;
+
+}
+
+
+input::placeholder {
+	color: rgb(25, 0, 255);
+	opacity: 0.5;
+  }
+
+label{
+	font-size: 0.9em;
+} 
+
+.inloggen{
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+
+
+:focus{
+	outline: dashed deeppink 0.2em;
+	/* border: solid rgb(255, 64, 0) 0.1em; */
+}
+
+::selection{
+	color: white;
+	background: deeppink;
+}
+
+
+
+
+
+
+footer{
+	
+	
+		background-color: #660cc1;
+		color: white;
+		text-align: center;
+		padding: 20px 0;
+		position: relative;
+		bottom: 0;
+		width: 100%;
+	
+}
