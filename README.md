@@ -237,6 +237,9 @@ vragen op volgorde van meest interessant voor iedereen tot minst:
 
 
 
+## Herkansing puntjes
+Voor mijn herkansing heb ben ik aan de slag gegaan met de aria-labels, javascript, footer en heb ik de articles en sections vervangen voor divs bij de plekken waar nodig. 
+
 
 
 ## Bronnenlijst
