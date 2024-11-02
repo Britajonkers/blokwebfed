@@ -107,15 +107,15 @@ h1{
 		}
 	  }
 	  
-	  li[aria-label="yay"] {
+	  li[aria-label="animatie"] {
 		--highlight-color:rgb(255, 8, 189);
 	  }
 	  
-	  li[aria-label="yay"] h2 {
+	  li[aria-label="animatie"] h2 {
 		font-size:2.5em;
 	  }
 	  
-	   li[aria-label="yay"] span {
+	   li[aria-label="animatie"] span {
 		display:inline-block;
 		
 		transform-origin:center bottom;
@@ -125,19 +125,19 @@ h1{
 		animation-play-state:paused;
 	  }
 	  
-	  li[aria-label="yay"] span:nth-of-type(1) {
+	  li[aria-label="animatie"] span:nth-of-type(1) {
 		animation-delay:0s;
 	  }
 	  
-	  li[aria-label="yay"] span:nth-of-type(2) {
+	  li[aria-label="animatie"] span:nth-of-type(2) {
 		animation-delay:.15s;
 	  }
 	  
-	  li[aria-label="yay"] span:nth-of-type(3) {
+	  li[aria-label="animatie"] span:nth-of-type(3) {
 		animation-delay:.3s;
 	  }
 	  
-	  li[aria-label="yay"]:hover span {
+	  li[aria-label="animatie"]:hover span {
 		animation-play-state:running;
 	  }
 	  
@@ -361,7 +361,7 @@ article {
 	}
  
 /* bovenste deel */
-article section[aria-label="bovenstuk"] {
+article section[aria-label="header van de post"] {
 	display: flex; 
     align-items: center; 
     padding-inline: var(--padding-I);
@@ -372,7 +372,7 @@ article section[aria-label="bovenstuk"] {
 	line-height: 1.125rem;
 }
 
-article section[aria-label="bovenstuk"] p{
+article section[aria-label="header van de post"] p{
 	
     font-size: 1em;
     color: white;
@@ -385,7 +385,7 @@ article section img[aria-label="profielfoto"] {
 }
 
 
-section[aria-label="bovenstuk"] img[aria-label="stipjes"] {
+section[aria-label="header van de post"] img[aria-label="stipjes"] {
     width: 1.5em;
     height: auto;
     margin-left: auto;             
@@ -415,7 +415,7 @@ figure img {
 
 /* onderste deel */
 
-article section[aria-label="info"] {
+article section[aria-label="informatie bij de post"] {
     font-size: 0.9em;
     color: #777;
     text-align: right;
@@ -424,14 +424,14 @@ article section[aria-label="info"] {
 	padding-inline:var(--padding-I)
 }
 
-section[aria-label="info"]{
+section[aria-label="informatie bij de post"]{
 	flex-grow: 1;
 }
 
 
 
 
-section[aria-label="info"] [aria-label="buttons"] {
+section[aria-label="informatie bij de post"] [aria-label="buttons"] {
 	display: flex;
 	flex-grow: 0;
 	flex-shrink: 0;
@@ -440,7 +440,7 @@ section[aria-label="info"] [aria-label="buttons"] {
 	height: auto;
 }
 
-section[aria-label="info"] [aria-label="buttons"] img{
+section[aria-label="informatie bij de post"] [aria-label="buttons"] img{
 	width: 2em;
 	height: auto;
 }
@@ -448,7 +448,7 @@ section[aria-label="info"] [aria-label="buttons"] img{
 
 
 
-section[aria-label="info"] [aria-label="buttons"] [aria-label="like"]{
+section[aria-label="informatie bij de post"] [aria-label="buttons"] [aria-label="like"]{
 	animation: bonzen 2s ease 0s 3 normal none;}
 
 
@@ -484,7 +484,7 @@ section[aria-label="info"] [aria-label="buttons"] [aria-label="like"]{
 
 
 
-section[aria-label="info"] p {
+section[aria-label="informatie bij de post"] p {
 	display: inline-block;
 	text-align: center;
 	background-color: transparent; 
@@ -637,22 +637,17 @@ label{
 
 
 
-/* //////footer///// */
-
-footer nav{
-position:relative;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: rgb(76, 0, 255);
-  color: white;
-}
 
 
-
-footer nav li a {
-	list-style: none;
-	line-height: 3.5em;
-	text-decoration: none;
-	font-size: small;
+footer{
+	
+	
+		background-color: #660cc1;
+		color: white;
+		text-align: center;
+		padding: 20px 0;
+		position: relative;
+		bottom: 0;
+		width: 100%;
+	
 }
